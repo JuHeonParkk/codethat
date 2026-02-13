@@ -5,6 +5,8 @@ import HomePage from "./pages/HomePage.jsx";
 import CourseListPage from "./pages/CourseListPage.jsx";
 import CoursePage from "./pages/CoursePage.jsx";
 import WishlistPage from "./pages/WishlistPage.jsx";
+import QuestionListPage from "./pages/QuestionListPage.jsx";
+import QuestionPage from "./pages/QuestionPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -17,6 +19,8 @@ createRoot(document.getElementById("root")).render(
           element={<CoursePage />}
         />
         <Route path="wishlist" element={<WishlistPage />} />
+        <Route path="questions" element={<QuestionListPage />} />
+        <Route path="questions/616825" element={<QuestionPage />} />
       </Routes>
     </App>
   </BrowserRouter>,
