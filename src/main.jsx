@@ -7,6 +7,7 @@ import CoursePage from "./pages/CoursePage.jsx";
 import WishlistPage from "./pages/WishlistPage.jsx";
 import QuestionListPage from "./pages/QuestionListPage.jsx";
 import QuestionPage from "./pages/QuestionPage.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")).render(
           <Route index element={<QuestionListPage />} />
           <Route path=":questionId" element={<QuestionPage />} />
         </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   </BrowserRouter>,
