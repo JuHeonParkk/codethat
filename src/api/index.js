@@ -8,6 +8,7 @@ function filterByKeyword(items, keyword) {
 }
 
 // 키워드 존재 여부에 따른 강좌 목록 반환
+// 검색어에 해당하는 키워드를 파라미터로 받음
 export function getCourses(keyword) {
   if (!keyword) return courses;
   return filterByKeyword(courses, keyword);
